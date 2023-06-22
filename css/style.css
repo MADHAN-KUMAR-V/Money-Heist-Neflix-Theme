@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/* ==========reset==========  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+/* =========== Variable ========== */
+
+:root{
+    --text-color:white;
+    --color-primary:red;
+    --color-secondary:gray;
+
+    --container-width-lg:88%;
+    --container-width-md:90%;
+}
+
+
+
+/* ========== basic ==========*/
+body{
+    height: 100vh;
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* ========== header ============ */
+
+header{
+    width: 100vw;
+}
+.container{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.header__img{
+    width: 10rem;
+    height: auto;
+}
+.mobile__logo{
+    display: none;
+}
+.header__links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.header__links li:first-child{
+    padding: 0.5rem 1rem;
+    background-color: var(--color-primary);
+    color: var(--text-color);
+    cursor: pointer;
+}
+.header__links li:last-child{
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+/* ========== main =========== */
+.main__container{
+    margin-right: 5%;
+    margin-left: 5%;
+    color: var(--text-color);
+    margin-top: 5%;
+    width: 30%;
+}
+.main__img{
+    width: 1.5rem;
+    height: auto;
+    
+}
+.main__logo{
+    display: flex;
+    align-items: center;
+    margin-bottom: -1rem;
+}
+.main__heading{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+.main__subheading{
+    margin-bottom: 1rem;
+}
+.gray{
+    color: var(--color-secondary);
+}
+.main__para{
+    margin-top: 0.5rem;
+}
+.main__button{
+    padding: 1rem;
+    border: none;
+    background-color: var(--color-primary);
+    color: var(--text-color);
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+/* ============= media query ============== */
+@media screen and (max-width:1024px){
+
+    .main__container{
+        width: 80%;
+    }
+    .header__img{
+        display: none;
+    }
+    .mobile__logo{
+        display: inline-block;
+        width: 4rem;
+    }
+    .main__heading{
+        font-size: 3rem;
+    }
+    .main__container{
+        margin-top: 15%;
+    }
+   
+    
+}
+
+
